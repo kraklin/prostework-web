@@ -30,7 +30,7 @@
 
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
-@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext');
 
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
@@ -72,7 +72,7 @@ body {
 
 body {
   background: #141515;
-  font-family: "muli-regular", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 1.6rem;
   line-height: 1.875;
   color: #767676;
@@ -113,7 +113,8 @@ h6,
 .h04,
 .h05,
 .h06 {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: #151515;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -182,7 +183,8 @@ p img {
 }
 
 p.lead {
-  font-family: "muli-light", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
   font-size: 2.1rem;
   line-height: 1.857;
   color: #838383;
@@ -206,11 +208,13 @@ b {
 }
 em,
 i {
-  font-family: "muli-italic", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
 }
 strong,
 b {
-  font-family: "muli-bold", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 600
 }
 
 small {
@@ -237,7 +241,8 @@ blockquote:before {
 }
 
 blockquote p {
-  font-family: "muli-light", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
   padding: 0;
   font-size: 1.9rem;
   line-height: 1.895;
@@ -261,7 +266,8 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "muli-bold", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: 0.05rem;
@@ -470,7 +476,8 @@ table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
-  font-family: "muli-regular", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
 }
 
 th,
@@ -482,7 +489,8 @@ td {
 
 th {
   color: #151515;
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 td {
@@ -604,7 +612,8 @@ select {
   border: 0;
   outline: none;
   color: #333333;
-  font-family: "muli-regular", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
@@ -682,7 +691,8 @@ select:focus {
 
 label,
 legend {
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
   color: #151515;
@@ -697,7 +707,8 @@ input[type="radio"] {
 label > .label-text {
   display: inline-block;
   margin-left: 1rem;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   line-height: inherit;
 }
 
@@ -762,7 +773,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   height: 5.4rem;
   line-height: calc(5.4rem - 0.6rem);
@@ -877,7 +889,8 @@ input::-moz-focus-inner {
   position: relative;
   margin-bottom: 3rem;
   border-radius: 3px;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
 }
 
@@ -920,7 +933,8 @@ input::-moz-focus-inner {
   margin: 0;
   padding: 1.5rem 0.6rem 0 0;
   font-size: 8.4rem;
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   line-height: 6rem;
   text-indent: 0;
   background: transparent;
@@ -1058,7 +1072,8 @@ input::-moz-focus-inner {
 .stats-tabs li a {
   display: inline-block;
   font-size: 2.5rem;
-  font-family: "montserrat-semibold", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   border: none;
   color: #151515;
 }
@@ -1071,7 +1086,8 @@ input::-moz-focus-inner {
   display: block;
   margin: 0.6rem 0 0 0;
   font-size: 1.4rem;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: #909090;
 }
 
@@ -1081,7 +1097,8 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 
 h1.intro-header {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 3.4rem;
   line-height: 1.324;
   color: #151515;
@@ -1193,7 +1210,8 @@ h1.intro-header::before {
   height: 42px;
   width: 42px;
   line-height: 42px;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -1275,7 +1293,8 @@ h1.intro-header::before {
  * ------------------------------------------------------------------- */
 
 #header-nav-wrap {
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   position: absolute;
   top: 0px;
@@ -1319,7 +1338,8 @@ h1.intro-header::before {
   height: 3.6rem;
   line-height: calc(3.6rem - 0.6rem);
   padding: 0 1.5rem;
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   text-transform: none;
   letter-spacing: normal;
@@ -1478,7 +1498,8 @@ h1.intro-header::before {
 }
 
 .home-content-left h1 {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 5.2rem;
   letter-spacing: -0.05rem;
   line-height: 1.269;
@@ -1599,7 +1620,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 
 .scroll-icon {
   display: inline-block;
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -1890,7 +1912,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 }
 
 #features .feature h3 {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.9rem;
   color: #151515;
   margin-bottom: 3rem;
@@ -1958,7 +1981,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 
 .about-how-content .step::before {
   display: block;
-  font-family: "muli-bold";
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
   font-size: 2rem;
   content: attr(data-item);
   color: #ffffff;
@@ -2133,13 +2157,15 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 }
 
 .pricing-table .plan-block .plan-block-title {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 2.4rem;
   margin-bottom: 3.6rem;
 }
 
 .pricing-table .plan-block .plan-block-price {
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 7.8rem;
   color: #151515;
   line-height: 1;
@@ -2147,7 +2173,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 }
 
 .pricing-table .plan-block .plan-block-price sup {
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 3rem;
   top: -3.6rem;
   margin-right: 3px;
@@ -2156,7 +2183,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 .pricing-table .plan-block .plan-block-per {
   margin-top: -0.6rem;
   margin-bottom: 0;
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 1.7rem;
 }
 
@@ -2175,7 +2203,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 
 .pricing-table .plan-block .plan-block-features li span {
   color: var(--primary-color);
-  font-family: "muli-bold", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
 }
 
 .pricing-table .plan-block.primary {
@@ -2319,7 +2348,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 }
 
 #testimonial-slider p {
-  font-family: "muli-regular", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
   font-size: 3.2rem;
   line-height: 1.5;
   color: #303030;
@@ -2328,7 +2358,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 #testimonial-slider p::before,
 #testimonial-slider p::after {
   display: inline-block;
-  font-family: "muli-regular", serif;
+  font-family: "Muli", sans-serif;
+  font-weight:400;
   font-size: 3.6rem;
   line-height: 1;
   position: relative;
@@ -2359,7 +2390,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  font-family: "montserrat-semibold", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   font-size: 1.9rem;
   margin-top: 0.9rem;
   margin-bottom: 3rem;
@@ -2368,7 +2400,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 
 #testimonial-slider .testimonial-author .author-info span {
   display: block;
-  font-family: "muli-bold", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.313;
   letter-spacing: 0;
@@ -2388,7 +2421,8 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
 
 #testimonial-slider .owl-nav [class*="owl-"] {
   color: #ffffff;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.4rem;
   height: 3rem;
   line-height: 3rem;
@@ -2709,7 +2743,8 @@ footer ul a:visited {
 
 .footer-subscribe #mc-form label {
   color: #ffffff;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.3rem;
   padding: 0 2rem;
 }
