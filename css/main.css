@@ -2101,7 +2101,7 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 #pricing {
-  background: #ffffff;
+  background: #ebebeb;
   padding-top: 15rem;
   padding-bottom: 12rem;
 }
@@ -2515,6 +2515,15 @@ html[data-useragent*="MSIE 10.0"] .home-scrolldown,
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+#download a ,
+#download a:visited {
+  color: #000000;
+}
+
+#download a:hover {
+  color: var(--primary-color-lighter);
 }
 
 #download .lead {
