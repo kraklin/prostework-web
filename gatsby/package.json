@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Dimitrios Lytras <dnlytras@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.6",
+    "@emotion/styled": "^10.0.6",
     "emotion": "^10.0.6",
     "gatsby": "^2.0.91",
     "gatsby-link": "^2.0.8",

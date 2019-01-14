@@ -38,5 +38,5 @@ export class Layout extends Component {
 export default Layout;
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.array,
 };

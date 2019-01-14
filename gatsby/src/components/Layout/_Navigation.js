@@ -13,46 +13,42 @@ const divStyle = {
 export class Navigation extends Component {
   render() {
     return (
-			<div uk-sticky="" > 
-        <nav className="uk-navbar-container ui-light" uk-navbar="" >
-          <div className="uk-container uk-container-expand">
-            <div data-uk-navbar>
-              <div className="uk-navbar-left uk-margin-small uk-visible@m">
-                <Link className="uk-logo" to="/">
-									<img src={Logo} width="100" height="50"/>
-                </Link>
-              </div>
-              <div className="uk-navbar-right">
-                <ul className="uk-navbar-nav">
-                  <li>
-                    <Link to="page-2">Úvod</Link>
-                  </li>
-                  <li>
-                    <Link to="page-2">O nás</Link>
-                  </li>
-                  <li>
-                    <Link to="page-2">Kontakt</Link>
-                  </li>
-              
-                  <li className="uk-navbar-item">
-                    <button className="uk-button uk-button-primary">
-                      Chci přijít
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="uk-hidden@m uk-button-secondary uk-margin-medium-right"
-                      data-uk-toggle="target: #offcanvas"
-                      type="button"
-                    >
-                      <span uk-icon="icon: table" />
-                    </button>
-                  </li>
-                </ul>
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; cls-inactive: uk-navbar-transparent; top: 200">
+        <div className="uk-position-relative">
+        <div className="uk-position-top">
+          <nav className="uk-navbar-container uk-navbar-transparent" >
+            <div className="uk-container uk-container-large">
+              <div data-uk-navbar>
+                <div className="uk-margin-small-top">
+                  <Link className="uk-logo" to="/">
+                    <img src={Logo} width="100" height="50"/>
+                  </Link>
+                </div>
+                <div className="uk-navbar-right">
+                  <ul className="uk-navbar-nav uk-visible@s">
+                    <li>
+                      <Link to="page-2">Úvod</Link>
+                    </li>
+                    <li>
+                      <Link to="page-2">O nás</Link>
+                    </li>
+                    <li>
+                      <Link to="page-2">Kontakt</Link>
+                    </li>
+                
+                    <li className="uk-navbar-item">
+                      <button className="uk-button uk-button-primary">
+                        Chci přijít
+                      </button>
+                    </li>
+                  </ul>
+                  <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" className="uk-navbar-toggle uk-hidden@s uk-navbar-toggle-icon uk-icon"></a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+      </div>
+      </div>
       </div>
     );
   }
