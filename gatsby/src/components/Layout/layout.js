@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from 'react-emotion';
 
-import { Footer, Navigation, OffCanvas } from 'Layout';
+import { Footer} from './_Footer';
+import { Navigation } from './_Navigation';
+import { OffCanvas } from './_OffCanvas';
 
 import './styles.scss';
 
-class TemplateWrapper extends Component {
+export class Layout extends Component {
   state = { ready: false };
   componentDidMount = () => {
     if (typeof window !== 'undefined') {
@@ -22,39 +23,20 @@ class TemplateWrapper extends Component {
     return (
       <div>
         {this.state.ready && (
-          <Wrapper>
+          <div>
             <Navigation />
-            <Main>{this.props.children()}</Main>
+            <div>{this.props.children}</div>
             <Footer />
             <OffCanvas />
-          </Wrapper>
+          </div>
         )}
       </div>
     );
   }
 }
 
-export default TemplateWrapper;
+export default Layout;
 
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func,
 };
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  animation: appear 0.5s forwards;
-
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
-const Main = styled.div`
-  flex: 1;
-`;
