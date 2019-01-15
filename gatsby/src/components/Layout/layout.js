@@ -22,6 +22,9 @@ export class Layout extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900|Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet" />
+        </Helmet>
         {this.state.ready && (
           <div>
             <Navigation />
