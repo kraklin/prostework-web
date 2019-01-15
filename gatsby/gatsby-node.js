@@ -1,12 +1,12 @@
 const path = require('path');
 
-exports.modifyWebpackConfig = ({ config, _stage }) => {
-  return config.merge({
-    resolve: {
-      alias: {
-        Blocks: path.resolve(config._config.context, 'src/components/Blocks'),
-        Layout: path.resolve(config._config.context, 'src/components/Layout'),
-      },
-    },
-  });
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+   actions.setWebpackConfig({
+     resolve: {
+        alias: {
+          Blocks: path.resolve(__dirname, 'src/components/Blocks'),
+          Layout: path.resolve(__dirname, 'src/components/Layout'),
+        },
+     },
+  })
 };
