@@ -23,7 +23,7 @@ export class Navigation extends Component {
                       <Link activeClassName="active-link" to="/">Úvod</Link>
                     </li>
                     <li>
-                      <Link activeClassName="active-link" to="o-nas">O nás</Link>
+                      <Link activeClassName="active-link" to="/o-nas/">O nás</Link>
                     </li>
                     <li>
                       <Link to="/">Kontakt</Link>

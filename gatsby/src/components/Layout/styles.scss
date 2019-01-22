@@ -14,14 +14,6 @@ $button-primary-color: #000000;
 @import 'node_modules/uikit/src/scss/mixins-theme.scss';
 @import 'node_modules/uikit/src/scss/uikit-theme.scss';
 
-.headroom-wrapper {
-  height: auto !important;
-}
-
-.hero-bg {
-  background-image: url(../../images/hero-bg_1200.jpg);
-}
-
 .uk-navbar-nav > li > a.active-link{
   color: $global-primary-background;
 }
