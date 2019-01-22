@@ -19,5 +19,10 @@ $button-primary-color: #000000;
 }
 
 .hero-bg {
-  background-image: url(../../images/hero-bg.jpg);
+  background-image: url(../../images/hero-bg_1200.jpg);
 }
+
+.uk-navbar-nav > li > a.active-link{
+  color: $global-primary-background;
+}
+
