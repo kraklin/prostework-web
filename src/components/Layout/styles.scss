@@ -2,6 +2,8 @@ $global-font-family: 'Open Sans', sans-serif;
 $global-muted-background: #eceff4;
 $global-primary-background: #f1c40f;
 $global-secondary-background: #293133;
+$global-link-color: $global-secondary-background;
+$base-link-text-decoration: underline;
 $base-heading-font-family: 'Alegreya Sans', sans-serif;
 $base-heading-font-weight: 800;
 $navbar-background: rgba(0,0,0,0.7);
@@ -10,6 +12,7 @@ $navbar-nav-item-color: #ffffff;
 $navbar-nav-item-hover-color: $global-primary-background;
 $button-primary-color: #000000;
 
+
 @import 'node_modules/uikit/src/scss/variables-theme.scss';
 @import 'node_modules/uikit/src/scss/mixins-theme.scss';
 @import 'node_modules/uikit/src/scss/uikit-theme.scss';
@@ -17,4 +20,5 @@ $button-primary-color: #000000;
 .uk-navbar-nav > li > a.active-link{
   color: $global-primary-background;
 }
+
 

@@ -1,27 +1,45 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { Footer} from './Footer';
-import { Navigation } from './Navigation';
-import { SocialIcons } from './SocialIcons';
-import { OffCanvas } from './OffCanvas';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { Footer } from "./Footer";
+import { Navigation } from "./Navigation";
+import { SocialIcons } from "./SocialIcons";
+import { OffCanvas } from "./OffCanvas";
 
-import './styles.scss';
+import "./styles.scss";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHeart, faCoffee, faSquare, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faHeart,
+  faCoffee,
+  faSquare,
+  faCheck
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 
 // add icons to library
-library.add(faHeart, faCoffee, faFacebookF, faTwitter, faInstagram, faSquare, faCheck, far);
+library.add(
+  faHeart,
+  faCoffee,
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faSquare,
+  faCheck,
+  far
+);
 
 export class Layout extends Component {
   state = { ready: false };
   componentDidMount = () => {
-    if (typeof window !== 'undefined') {
-      const uikit = require('uikit');
-      const icons = require('uikit/dist/js/uikit-icons.min');
+    if (typeof window !== "undefined") {
+      const uikit = require("uikit");
+      const icons = require("uikit/dist/js/uikit-icons.min");
       uikit.use(icons);
       this.setState({ ready: true });
     }
@@ -32,7 +50,10 @@ export class Layout extends Component {
       <div>
         <Helmet>
           <title>ProstěWork - prostějovská sdílená kancelář</title>
-          <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900|Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900|Open+Sans:400,600&amp;subset=latin-ext"
+            rel="stylesheet"
+          />
         </Helmet>
         {this.state.ready && (
           <div>
@@ -51,5 +72,5 @@ export class Layout extends Component {
 export default Layout;
 
 Layout.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.array
 };

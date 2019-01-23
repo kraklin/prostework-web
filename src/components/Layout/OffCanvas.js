@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import React, { Component } from "react";
+import Link from "gatsby-link";
 
 export class OffCanvas extends Component {
   render() {
     return (
-      <div className="uk-offcanvas-content" >
-        <div id="offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true">
+      <div className="uk-offcanvas-content">
+        <div
+          id="offcanvas"
+          data-uk-offcanvas="mode: push; overlay: true; flip: true"
+        >
           <div className="uk-offcanvas-bar">
             <div className="uk-panel">
               <ul className="uk-nav uk-nav-default tm-nav">
