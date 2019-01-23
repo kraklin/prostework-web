@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Footer} from './_Footer';
-import { Navigation } from './_Navigation';
-import { SocialIcons } from './_SocialIcons';
-import { OffCanvas } from './_OffCanvas';
+import { Footer} from './Footer';
+import { Navigation } from './Navigation';
+import { SocialIcons } from './SocialIcons';
+import { OffCanvas } from './OffCanvas';
 
 import './styles.scss';
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from "../components/Layout/layout"
-import PageHeader from '../components/Blocks/PageHeader';
-import Image from '../images/hero-bg_1200.jpg';
+import Layout from "Layout/Layout"
+import PageHeader from 'Blocks/PageHeader';
+import Image from 'Images/hero-bg_1200.jpg';
 
 const AboutUsPage = () => (
   <Layout>

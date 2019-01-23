@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Hero } from '../components/Blocks/_Hero';
-import { Stats } from '../components/Blocks/_Stats';
-import { Tiles } from '../components/Blocks/_Tiles';
-import { CardsRow } from '../components/Blocks/_CardsRow';
-import { Comments } from '../components/Blocks/_Comments';
-import { NewsLetter } from '../components/Blocks/_Newsletter';
-import { Layout } from '../components/Layout/layout'
+import { Hero } from 'Blocks/_Hero';
+import { Stats } from 'Blocks/_Stats';
+import { Tiles } from 'Blocks/_Tiles';
+import { CardsRow } from 'Blocks/_CardsRow';
+import { Comments } from 'Blocks/_Comments';
+import { NewsLetter } from 'Blocks/_Newsletter';
+import { Layout } from 'Layout/Layout'
 
 const IndexPage = () => (
   <div>
